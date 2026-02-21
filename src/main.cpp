@@ -22,5 +22,10 @@ void setup() {
 
 void loop() {
     sensorState = digitalRead(irPin);
+    if (sensorState == LOW) {   // Active LOW sensor
+        Serial.println("Obstacle Detected");
+    } else {
+        Serial.println("No Obstacle");
+    }
 
 }
