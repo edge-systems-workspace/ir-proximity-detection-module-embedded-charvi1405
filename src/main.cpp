@@ -14,15 +14,8 @@ int irPin = 2;
 int sensorState = 0;
 
 void setup() {
+    Serial.begin(9600);
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Configure IR pin as INPUT
-
-    // TODO 5:
-    // Print system initialization message
 }
 
 void loop() {
