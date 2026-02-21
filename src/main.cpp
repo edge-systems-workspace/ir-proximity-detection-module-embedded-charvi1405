@@ -16,20 +16,11 @@ int sensorState = 0;
 void setup() {
     Serial.begin(9600);
     pinMode(irPin, INPUT);
+    Serial.println("IR Sensor System Initialized");
 
 }
 
 void loop() {
+    sensorState = digitalRead(irPin);
 
-    // TODO 6:
-    // Read digital value from IR sensor
-
-    // TODO 7:
-    // If obstacle detected
-    //     Print "Obstacle Detected"
-    // Else
-    //     Print "No Obstacle"
-
-    // TODO 8:
-    // Add small delay (200–500ms)
 }
