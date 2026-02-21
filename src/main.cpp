@@ -11,6 +11,7 @@
  */
 
 int irPin = 2;
+int sensorState = 0;
 
 void setup() {
 
